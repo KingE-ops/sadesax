@@ -42,6 +42,13 @@
             scroll-behavior: smooth;
         }
 
+       html, body {
+    width: 100%;
+    /* This prevents the entire page from wobbling */
+    overflow-x: hidden; 
+    position: relative;
+}
+
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--soft-white);
@@ -479,7 +486,6 @@
             min-width: 350px;
             position: relative;
             overflow: hidden;
-            group;
         }
 
         .instructor-img {
@@ -882,6 +888,9 @@
             .about-grid, .contact-grid, .method-grid { grid-template-columns: 1fr; }
             .hero-content h1 { font-size: 3.5rem; }
             .nav-links { display: none; }
+            body{
+                overflow-x: hidden;
+            }
         }
 /* The "Window" - fills the entire screen width */
 .slider-frame {
