@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission | Shade Sax Instant Music Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
+        .form-card { background: white; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.04); }
+        .accent-gold { color: #b38b1a; }
+        .bg-gold { background: #b38b1a; }
+        
+        /* Heartbeat Animation */
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.05); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.08); }
+            70% { transform: scale(1); }
+        }
+        .heartbeat-btn { animation: heartbeat 2s ease-in-out infinite; }
+        .heartbeat-btn:hover { animation-play-state: paused; }
+    </style>
+</head>
+<body class="py-12 px-4">
+
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold tracking-tighter text-slate-900 uppercase">Shade Sax <span class="accent-gold">Instant Music Academy</span></h1>
+            <p class="text-slate-500 mt-4 text-lg">Empowering the next generation of musical excellence.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="md:col-span-1 space-y-6">
+                <div class="form-card p-6 border border-slate-100">
+                    <h3 class="font-bold text-slate-900 uppercase tracking-widest text-xs mb-4 accent-gold">Available Courses</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Guitar, Flute, Violin, Voice training, Trumpet, Piano, Cello, Clarinet, Saxophone, Theory of Music, Drums.
+                    </p>
+                </div>
+
+                <div class="form-card p-6 border border-slate-100 bg-slate-900 text-white">
+                    <h3 class="font-bold uppercase tracking-widest text-xs mb-4 text-amber-500">Tuition Fees</h3>
+                    <ul class="text-xs space-y-4">
+                        <li>
+                            <span class="block font-bold">Hourly Rate</span>
+                            <span class="opacity-70 text-lg">₦10,000</span> / hour
+                        </li>
+                        <li>
+                            <span class="block font-bold">Monthly (Once Weekly)</span>
+                            <span class="opacity-70 text-lg">₦50,000</span>
+                        </li>
+                        <li>
+                            <span class="block font-bold">Termly (10 Weeks)</span>
+                            <span class="opacity-70 text-lg">₦150,000</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form-card p-6 border border-slate-100">
+                    <h3 class="font-bold text-slate-900 uppercase tracking-widest text-xs mb-4 accent-gold">Payment Details</h3>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase mb-2">Account Name: Shade Sax Instant Music</p>
+                    <div class="space-y-2 text-sm">
+                        <p class="flex justify-between"><span>Stanbic IBTC:</span> <span class="font-mono font-bold">0036179854</span></p>
+                        <p class="flex justify-between"><span>FCMB:</span> <span class="font-mono font-bold">4939423018</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2">
+                <form action="" method="GET" class="form-card p-10 border border-slate-100">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-8">Registration Form</h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Full Name *</label>
+                            <input type="text" required class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Date of Birth *</label>
+                                <input type="date" required class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Email Address</label>
+                                <input type="email" class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl outline-none" placeholder="name@example.com">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Religion *</label>
+                            <div class="flex gap-6 mt-2">
+                                <label class="flex items-center space-x-2 text-sm text-slate-600"><input type="radio" name="religion" value="Christian" required> <span>Christian</span></label>
+                                <label class="flex items-center space-x-2 text-sm text-slate-600"><input type="radio" name="religion" value="Islam"> <span>Islam</span></label>
+                                <label class="flex items-center space-x-2 text-sm text-slate-600"><input type="radio" name="religion" value="Other"> <span>Other</span></label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Preferred Tuition Plan *</label>
+                            <select required class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl outline-none">
+                                <option value="">Select a plan</option>
+                                <option>One hour per week (₦10,000)</option>
+                                <option>Once in a week / Monthly (₦50,000)</option>
+                                <option>Termly / 10 Weeks (₦150,000)</option>
+                            </select>
+                        </div>
+
+                        <div class="bg-amber-50 p-4 rounded-xl text-[11px] text-amber-800 leading-relaxed border border-amber-100">
+                            <strong>Policy Note:</strong> Students must own instrument(s) they wish to learn. Lessons are once a week (Sundays excluded). We prepare students for MUSON Graded Theory/Practical exams twice a year.
+                        </div>
+
+                        <button type="submit" class="heartbeat-btn w-full bg-slate-900 text-white py-5 rounded-2xl font-bold text-lg hover:bg-amber-600 transition-all shadow-xl shadow-slate-200 uppercase tracking-widest">
+                            Enroll Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <footer class="mt-12 text-center text-slate-400 text-[10px] uppercase tracking-widest">
+            Shade Sax Instant Music Academy &copy; 2026 • Professional Music Training
+        </footer>
+    </div>
+
+    <script>
+        // Simple script to handle redirecting to your Google Form on submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            // In a real app, you'd process data here. 
+            // Since we're using your link, it will redirect upon clicking 'Enroll Now'
+        });
+    </script>
+</body>
+</html>
