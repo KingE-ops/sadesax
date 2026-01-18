@@ -2,71 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Subscription Notice</title>
+    <title>Free Link Expired</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            background: #f4f6f8;
-            height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 20px;
+            color: #fff;
         }
 
-        .container {
-            background: #ffffff;
-            padding: 40px;
-            max-width: 420px;
-            width: 90%;
-            border-radius: 10px;
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(14px);
+            padding: 32px 28px;
+            width: 100%;
+            max-width: 520px;
+            border-radius: 18px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
             text-align: center;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ff4d4d;
+            padding: 8px 18px;
+            border-radius: 24px;
+            font-size: 14px;
+            margin-bottom: 18px;
+            letter-spacing: 0.4px;
         }
 
         h1 {
-            color: #d32f2f;
-            margin-bottom: 20px;
+            font-size: 30px;
+            margin-bottom: 14px;
         }
 
-        .message {
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #ddd;
+            margin-bottom: 26px;
+        }
+
+        .description {
             font-size: 16px;
-            color: #333;
-            margin-bottom: 20px;
+            line-height: 1.7;
+            color: #e0e0e0;
+            margin-bottom: 30px;
         }
 
         .plans {
             list-style: none;
+            margin-bottom: 34px;
         }
 
         .plans li {
-            background: #f1f1f1;
-            margin: 10px 0;
-            padding: 12px;
-            border-radius: 6px;
-            font-weight: bold;
-            color: #222;
+            background: rgba(255, 255, 255, 0.14);
+            margin: 12px 0;
+            padding: 16px 18px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .github-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: #24292e;
+            color: #fff;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .github-btn:hover {
+            background: #1b1f23;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 24px;
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        /* Extra boost for larger screens */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 34px;
+            }
+
+            .card {
+                padding: 40px;
+            }
+
+            .plans li {
+                font-size: 17px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Free Trial Ended</h1>
-        <p class="message">
-            Your 3 days free trial has been used<br><br>
-            Subscribe to our plan
+    <div class="card">
+        <span class="badge">Access Restricted</span>
+
+        <h1>Free Link Expired</h1>
+        <h2>Subscription Required</h2>
+
+        <p class="description">
+            Your free trial for using our link has expired.<br>
+            Subscribe with your GitHub account to continue enjoying full access.
         </p>
 
         <ul class="plans">
-            <li>@10k - a week</li>
-            <li>50k - 6 month</li>
-            <li>75k - 8 moths</li>
+            <li><span>Weekly Plan</span><span>10k / week</span></li>
+            <li><span>Mid-Term Plan</span><span>50k / 6 months</span></li>
+            <li><span>Extended Plan</span><span>75k / 8 months</span></li>
+            <li><span>Ultimate Plan</span><span>120k / 3 years</span></li>
         </ul>
+
+        <a href="#" class="github-btn">
+            🐙 Subscribe with GitHub
+        </a>
+
     </div>
 </body>
 </html>
